@@ -14,7 +14,7 @@ def is_unique_no_additional_ds(s: str):
     """
     l = list(sorted(s))
     for i, c in enumerate(l):
-        if i < len(l) - 2:
+        if i <= len(l) - 2:
             if c == l[i + 1]:
                 return False
 
