@@ -22,3 +22,11 @@ class LinkedList:
             yield n
             n = n.next
 
+    def __len__(self):
+        i = 0
+        node = self.head
+        while node:
+            i += 1
+            node = node.next
+        return i
+
