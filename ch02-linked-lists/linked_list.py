@@ -14,6 +14,7 @@ class SinglyLinkedList:
             else:
                 node.next = SinglyLinkedNode(val)
                 node = node.next
+        self.tail = node
 
     def __iter__(self):
         n = self.head
