@@ -8,6 +8,7 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.adjacents = []
+        self.visited = False
 
 def dfs(node, visit):
     visit(node)
