@@ -3,6 +3,7 @@ class BinaryNode:
         self.value = value
         self.left = left
         self.right = right
+        self.parent = None
 
 def in_order(node, visit):
     if node:
